@@ -1,0 +1,11 @@
+
+ function contarOcorrencias(array) {
+    const frequencia = {};
+    array.forEach(num => {
+        frequencia[num] = (frequencia[num] || 0) + 1;
+    });
+    return frequencia;
+}
+const numeros = [1, 2, 2, 3, 3, 3, 1, 4, 4, 2, 5, 5];
+const resultado = contarOcorrencias(numeros);
+console.log(resultado);

@@ -1,0 +1,6 @@
+const ehPalindromo = str => {
+    const normalizada = str.toLowerCase().replace(/[\W_]/g, '');
+    return normalizada === normalizada.split('').reverse().join('');
+};
+console.log(ehPalindromo("O treco certo"));
+

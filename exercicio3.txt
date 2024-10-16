@@ -1,0 +1,8 @@
+
+const separarParesImpares = numeros => 
+    numeros.reduce((acc, num) => {
+        acc[num % 2 === 0 ? 'pares' : 'impares'].push(num);
+        return acc;
+    }, { pares: [], impares: [] });
+const numeros = [1, 2, 3, 4, 5, 6, 7, 8 ];
+console.log(separarParesImpares(numeros));
